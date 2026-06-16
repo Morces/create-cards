@@ -31,7 +31,7 @@ const ENDPOINT_CONFIGS = [
   {
     path: './endpoints/system/',
     options: {
-      pathPrefix: '',
+      pathPrefix: '/',
     },
   },
 ];
