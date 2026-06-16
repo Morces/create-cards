@@ -89,4 +89,8 @@ ENDPOINT_CONFIGS.forEach((config) => {
   setupEndpointHandlers(config.path, config.options);
 });
 
-server.startServer();
+if (!process.env.VERCEL) {
+  server.startServer();
+}
+
+module.exports = server.executeRequest;
